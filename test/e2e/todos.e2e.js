@@ -27,15 +27,21 @@ describe('todo app', () => {
   })
 
   it('renders the proper notification', () => {
-    return driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+    return Promise((resolve) => {
+      setTimeout(resolve, 1000)
+    })
   })
 
   it('can add a todo', () => {
-    return driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+    return Promise((resolve) => {
+      setTimeout(resolve, 1000)
+    })
   })
 
   it('can remove a todo', () => {
-    return driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+    return Promise((resolve) => {
+      setTimeout(resolve, 1000)
+    })
   })
 
   after(() => {
